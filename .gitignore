@@ -1,0 +1,23 @@
+# Unreal Engine generated files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Large third-party Unreal Marketplace assets (keep locally, do not commit)
+Content/ParagonBoris/
+Content/ParagonMinions/
+Tools/Codex/
+
+# IDE and editor files
+.vs/
+.idea/
+.vscode/
+*.sln
+*.VC.db
+*.VC.opendb
+
+# Build artifacts
+*.pdb
+*.obj
+*.log

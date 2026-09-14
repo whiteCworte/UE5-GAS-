@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "CrashCourse",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "D:\\epicUE\\UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CrashCourse Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Debug",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Debug",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourse Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Debug",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"DebugGame",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"DebugGame",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourse Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"DebugGame",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Development",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Development",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourse Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Development",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Test",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Test",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourse Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Test",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Shipping",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Shipping",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourse Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourse Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourse",
+					"Win64",
+					"Shipping",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"Debug",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"Debug",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourseEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"Debug",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourseEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"Development",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"Development",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CrashCourseEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"label": "CrashCourseEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"CrashCourseEditor",
+					"Win64",
+					"Development",
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\epicUE\\UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CrashCourse (Debug)",
+				"request": "launch",
+				"program": "E:\\MyGameDemo\\CrashCourse\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "CrashCourse Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourse (DebugGame)",
+				"request": "launch",
+				"program": "E:\\MyGameDemo\\CrashCourse\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "CrashCourse Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourse (Development)",
+				"request": "launch",
+				"program": "E:\\MyGameDemo\\CrashCourse\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "CrashCourse Win64 Development Build",
+				"args": [
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourse (Test)",
+				"request": "launch",
+				"program": "E:\\MyGameDemo\\CrashCourse\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "CrashCourse Win64 Test Build",
+				"args": [
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourse (Shipping)",
+				"request": "launch",
+				"program": "E:\\MyGameDemo\\CrashCourse\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "CrashCourse Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourseEditor (Debug)",
+				"request": "launch",
+				"program": "D:\\epicUE\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "CrashCourseEditor Win64 Debug Build",
+				"args": [
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject"
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourseEditor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\epicUE\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "CrashCourseEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject"
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch CrashCourseEditor (Development)",
+				"request": "launch",
+				"program": "D:\\epicUE\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "CrashCourseEditor Win64 Development Build",
+				"args": [
+					"E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject"
+				],
+				"cwd": "D:\\epicUE\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\epicUE\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\epicUE\\UE_5.4"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "D:\\epicUE\\UE_5.4\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=E:\\MyGameDemo\\CrashCourse\\CrashCourse.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "D:\\epicUE\\UE_5.4"
+			}
+		]
+	}
+}
