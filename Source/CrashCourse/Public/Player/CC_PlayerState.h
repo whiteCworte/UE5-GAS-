@@ -8,7 +8,9 @@
 
 #include "CC_PlayerState.generated.h"
 
+class UAttributeSet;
 class UAbilitySystemComponent;
+
 
 UCLASS()
 class CRASHCOURSE_API ACC_PlayerState : public APlayerState, public IAbilitySystemInterface
@@ -17,9 +19,12 @@ class CRASHCOURSE_API ACC_PlayerState : public APlayerState, public IAbilitySyst
 public:
 	ACC_PlayerState();
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
-	
+	UAttributeSet* GetAttributeSet() const { return AttributeSet; };
 private:
 	
 	UPROPERTY(VisibleAnywhere,Category="Crash|Abilities")
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
+	
+	UPROPERTY()
+	TObjectPtr<UAttributeSet> AttributeSet;
 };

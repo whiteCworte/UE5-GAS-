@@ -18,7 +18,8 @@ public class CrashCourse : ModuleRules
 			//以下三个模块是
 			"GameplayAbilities",
 			"GameplayTasks",
-			"GameplayTags"
+			"GameplayTags",
+			"UMG"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
